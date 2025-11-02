@@ -19,20 +19,6 @@ Includes **Nginx reverse proxy**, **Ngrok integration**, **structured logging**,
 
 ---
 
-## Technologies
-
-- Python
-- Django
-- Aiogram
-- PostgreSQL
-- Redis
-- Celery + django-celery-beat
-- Docker & Docker Compose
-- Nginx
-- Ngrok (optional, for production webhook)
-
----
-
 ## Getting Started
 
 ### 1. Clone the repository
