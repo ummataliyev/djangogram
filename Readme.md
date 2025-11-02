@@ -1,4 +1,4 @@
-# Djangogram – Production-Ready Telegram Bot
+# Djangogram – Production-Ready Django + Aiogram Telegram Bot
 
 A production-ready **Django + Aiogram Telegram bot** boilerplate supporting both **polling** and **webhook** modes.  
 Includes **Nginx reverse proxy**, **Ngrok integration**, **structured logging**, **async PostgreSQL operations**, **Celery tasks**, and **modular handler architecture**.
@@ -7,14 +7,13 @@ Includes **Nginx reverse proxy**, **Ngrok integration**, **structured logging**,
 
 ## Features
 
-- ✅ Polling mode (for development)
-- ✅ Webhook mode (for production)
-- ✅ Ngrok integration for local testing
+- ✅ Polling mode (development)
+- ✅ Webhook mode (production)
+- ✅ Ngrok integration (for local webhook testing)
 - ✅ Nginx reverse proxy ready
-- ✅ PostgreSQL database support
-- ✅ Async database operations with Django ORM
+- ✅ Async PostgreSQL operations with Django ORM
 - ✅ Celery for background tasks & scheduling
-- ✅ Modular handler and router structure
+- ✅ Modular handler/router structure
 - ✅ Structured logging
 - ✅ Dockerized environment (PostgreSQL, Redis, Nginx)
 
@@ -43,7 +42,17 @@ cd djangogram
 ```
 
 ### 2. Create .env file
-Create a .env file in the docker/development directory:
+Create a .env file for development:
 ```bash
 cp docker/development/.env-example docker/development/.env
+```
+
+Create a .env file for production:
+```bash
+cp docker/development/.env-example docker/production/.env
+```
+
+### 3. Check available commands
+```bash
+make help
 ```
